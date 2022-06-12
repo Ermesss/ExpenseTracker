@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C668090728563A96009F67E1 /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = C668090628563A96009F67E1 /* SwiftUIFontIcon */; };
+		C668090928563B69009F67E1 /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C668090828563B69009F67E1 /* TransactionListViewModel.swift */; };
 		C6E57D8D28560968009A9649 /* ExpenseTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E57D8C28560968009A9649 /* ExpenseTrackerApp.swift */; };
 		C6E57D8F28560968009A9649 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E57D8E28560968009A9649 /* ContentView.swift */; };
 		C6E57D912856096C009A9649 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6E57D902856096C009A9649 /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C668090828563B69009F67E1 /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
 		C6E57D8928560968009A9649 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6E57D8C28560968009A9649 /* ExpenseTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseTrackerApp.swift; sourceTree = "<group>"; };
 		C6E57D8E28560968009A9649 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				C6E57D8C28560968009A9649 /* ExpenseTrackerApp.swift */,
 				C6E57D8E28560968009A9649 /* ContentView.swift */,
 				C6E57DA2285616B6009A9649 /* TransactionRow.swift */,
+				C668090828563B69009F67E1 /* TransactionListViewModel.swift */,
 				C6E57D9C2856106C009A9649 /* TransactionModel.swift */,
 				C6E57D9A28560AF9009A9649 /* Extensions.swift */,
 				C6E57D902856096C009A9649 /* Assets.xcassets */,
@@ -162,6 +165,7 @@
 				C6E57D8F28560968009A9649 /* ContentView.swift in Sources */,
 				C6E57DA3285616B6009A9649 /* TransactionRow.swift in Sources */,
 				C6E57D9B28560AF9009A9649 /* Extensions.swift in Sources */,
+				C668090928563B69009F67E1 /* TransactionListViewModel.swift in Sources */,
 				C6E57D8D28560968009A9649 /* ExpenseTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
