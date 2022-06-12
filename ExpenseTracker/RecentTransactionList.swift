@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct RecentTransactionList: View {
+    @EnvironmentObject var transactionListVM: TransactionListViewModel
+    
     var body: some View {
         VStack{
             HStack{
@@ -29,6 +31,15 @@ struct RecentTransactionList: View {
             }
         }
             .padding(.top)
+            
+//            RECENT TRANSACTION LIST
+            ForEach (Array(transactionListVM.transaction.prefix(5).enumerated()), id: \.element)
+            {index, transaction in
+                TransactionRow(transaction: transaction)
+                
+                Divider()
+                    .opacity(index == 4 ? 0 : 1)
+            }
     }
         .padding()
         .background(Color.systemBackground)
@@ -37,8 +48,20 @@ struct RecentTransactionList: View {
 }
 
 struct RecentTransactionList_Previews: PreviewProvider {
+    static let transactionListVM: TransactionListViewModel = {
+        let transactionListVM = TransactionListViewModel()
+        transactionListVM.transaction = transactionListPreviewData
+        return transactionListVM
+    }()
+    
     static var previews: some View {
-        RecentTransactionList()
+        Group {
+            RecentTransactionList()
+            RecentTransactionList()
+                .preferredColorScheme(.dark)
+        }
+        .environmentObject(transactionListVM)
+
         }
     }
 }
